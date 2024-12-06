@@ -14,6 +14,8 @@ from database.database import add_user, del_user, full_userbase, present_user
 # In-memory dictionary to keep track of ongoing /start commands
 processing_users = {}
 
+
+
 async def delete_after_delay(message: Message, delay):
     await asyncio.sleep(delay)
     await message.delete()
@@ -140,7 +142,7 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 #=====================================================================================##
 
 is_restarting = False
-@Bot.on_message(filters.command("restart") & filters.user(7030439873))
+@Bot.on_message(filters.command("restart") & filters.user(ADMINS))
 async def restart_bot(b, m):
     global is_restarting
     if not is_restarting:
