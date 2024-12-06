@@ -10,7 +10,7 @@ import pyrogram.utils
 pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7599485080:AAEfPy_2Lbvkqb4bDzn8qpZkwr_53RBGfjU")  
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7648853673:AAECdyBdOASWXrXoOAxejXk0V1J1QH549SI")  
 
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "19863702"))
@@ -28,13 +28,13 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "7705025239"))
 PORT = os.environ.get("PORT", "8080")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://itachi:itachi@itachi.gatrf.mongodb.net/?retryWrites=true&w=majority&appName=Itachi")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://luffy:luffy@luffy.umcru.mongodb.net/?retryWrites=true&w=majority&appName=Luffy")
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
-DB_NAME = os.environ.get("DATABASE_NAME", "Itachi")
+DB_NAME = os.environ.get("DATABASE_NAME", "Luffy")
 
 # Force sub channel ID, if you want to enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001983923805"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002158921501"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001886219491"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
