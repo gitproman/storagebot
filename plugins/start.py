@@ -106,15 +106,18 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            await message.reply_text(f"<b><i>» Save These Files In Your Saved Messages. They Will Be Deleted In 30 Minutes.</i>\n <blockquote>» Must Join\n~ @hindi_crunchyroll\n~ @anime_in_hind\n~ @Crypto_Airdrop_Live</blockquote></b>")
             
+
+                await message.reply_text(
+                    "<b><i>» Save These Files In Your Saved Messages. They Will Be Deleted In 30 Minutes.</i>\n"
+                    "<blockquote>» Must Join\n~ @hindi_crunchyroll\n~ @anime_in_hind\n~ @Crypto_Airdrop_Live</blockquote></b>",
+                    parse_mode=enums.ParseMode.HTML
+                )
         else:
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("😊 About Me", callback_data="about"),
-                        InlineKeyboardButton("🔒 Close", callback_data="close")
-                    ]
+                    [InlineKeyboardButton("😊 About Me", callback_data="about")],
+                    [InlineKeyboardButton("🔒 Close", callback_data="close")]
                 ]
             )
             await message.reply_text(
