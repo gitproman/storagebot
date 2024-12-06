@@ -3,7 +3,7 @@ from subprocess import run as srun
 
 
 # Retrieve the upstream repository and branch
-UPSTREAM_REPO = "https://github.com/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@gitproman/storagebot"
+UPSTREAM_REPO = "https://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@github.com/gitproman/storagebot"
 UPSTREAM_BRANCH = "main"
 
 # Validate the repository URL
