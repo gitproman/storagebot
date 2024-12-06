@@ -99,10 +99,10 @@ async def start_command(client: Client, message: Message):
                         if k is not None:
                             asyncio.create_task(delete_after_delay(k, 1800))
                 except FloodWait as e:
-                    k = await asyncio.sleep(e.x)
-                    await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
-                      if k is not None:
-                            asyncio.create_task(delete_after_delay(k, 1800))
+                    await asyncio.sleep(e.x)
+                    k=await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
+                    if k is not None:
+                        asyncio.create_task(delete_after_delay(k, 1800))
                 except:
                     pass
 
