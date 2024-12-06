@@ -4,7 +4,7 @@ from subprocess import run as srun
 
 # Retrieve the upstream repository and branch
 UPSTREAM_REPO = "https://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@github.com/gitproman/storagebot"
-UPSTREAM_BRANCH = "2nd"
+UPSTREAM_BRANCH = "3rd"
 
 # Validate the repository URL
 if not UPSTREAM_REPO:
