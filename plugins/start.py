@@ -108,7 +108,7 @@ async def start_command(client: Client, message: Message):
 
             
 
-                await message.reply_text(
+                await message.send_message(
                     "<b><i>» Save These Files In Your Saved Messages. They Will Be Deleted In 30 Minutes.</i>\n"
                     "<blockquote>» Must Join\n~ @hindi_crunchyroll\n~ @anime_in_hind\n~ @Crypto_Airdrop_Live</blockquote></b>",
                     parse_mode=ParseMode.HTML,
